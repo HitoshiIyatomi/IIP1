@@ -1,7 +1,7 @@
 # train_neuralnet.py
 # training the first neural network
-# you can change
-#
+# you can change how to calculate gradient below
+#  (you will find numerical gradient is too slow)
 import sys, os
 sys.path.append(os.pardir)  # setting for including parent directly
 import numpy as np
