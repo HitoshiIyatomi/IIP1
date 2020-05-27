@@ -5,7 +5,7 @@
 #   then you can skip download it again
 #
 import sys, os
-sys.path.append(os.pardir)
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 import numpy as np
 from dataset.mnist import load_mnist
@@ -49,4 +49,4 @@ for i in range(iters_num):
         test_acc = network.accuracy(x_test, t_test)
         train_acc_list.append(train_acc)
         test_acc_list.append(test_acc)
-        print(train_acc, test_acc)
+        print("epoch= {:5d} train_acc = {:.4f}, test_acc = {:.4f}".format(int(i/iter_per_epoch),train_acc, test_acc))

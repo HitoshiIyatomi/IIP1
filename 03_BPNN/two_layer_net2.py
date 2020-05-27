@@ -2,7 +2,7 @@
 #  updated from two_layer_net.py
 #
 import sys, os
-sys.path.append(os.pardir) # setting for including parent directly
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 import numpy as np
 from collections import OrderedDict
 from common.layers import *
