@@ -2,8 +2,12 @@
 # definition of various layer class
 #
 import numpy as np
-from common.functions import *
-from common.util import im2col, col2im
+
+#from common.functions import *
+#from common.util import im2col, col2im
+
+from . functions import *
+from . util import im2col, col2im
 
 
 class Relu:
